@@ -1,0 +1,25 @@
+prices {
+    display: table;
+    border-collapse: collapse;
+    margin: 75px auto 10px auto;
+}
+cell, head {
+    display: table-row;
+}
+hnumber, hname, hlength, htime, hprice {
+    display: table-cell;
+    border: 2px solid black;
+    padding: 7px;
+    text-align: center;
+    background-color: lightgray;
+    font-size: 25px;
+    font-weight: bolder;
+}
+number, name, length, time, price{
+    display: table-cell;
+    border: 2px solid black;
+    padding: 16px;
+    text-align: center;
+    background-color: lightgray;
+    font-size: 20px;
+}

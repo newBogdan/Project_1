@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены на услуги</title>
+    <link rel="stylesheet" href="../Css/prices.css">
+    <link rel="stylesheet" href="../Css/forXML.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../images/logo.png">
+        <section class="title">Государственное учреждение “Физкультурно-оздоровительный центр”</section>
+        <input type="checkbox" id="burger_checkbox">
+        <label id="burger_simbol">&#8801;</label>
+        <nav class="nav_burger">
+                <ul class="menu">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="prices.html">Цены на услуги</a></li>
+                    <li><a href="installations.html">Спортивные сооружения</a></li>
+                    <li><a href="time_work.html">Режим работы</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section>
+        <xml>
+            <?xml version="1.0"?>
+            <prices>
+                <head>
+                    <hnumber>№</hnumber>
+                    <hname>Наименование</hname>
+                    <hlength>Продолжительность посещения</hlength>
+                    <htime>Время посещения</htime>
+                    <hprice>Цена, бел.руб</hprice>
+                </head>
+                <cell>
+                    <number>1.</number>
+                    <name>Тренажёрный зал 1 посещение</name>
+                    <length>1 час</length>
+                    <time>18.00-21.00</time>
+                    <price>6 р.</price>    
+                </cell>
+                <cell>
+                    <number>2.</number>
+                    <name>Тренажёрный зал абонемент 1 месяц </name>
+                    <length>1 час</length>
+                    <time>18.00-21.00</time>
+                    <price>55 р.</price>
+                </cell>
+                <cell>
+                    <number>3.</number>
+                    <name>Зал аэробики 1 посещение</name>
+                    <length>1 час</length>
+                    <time>18.00-21.00</time>
+                    <price>9 р.</price>
+                </cell>
+                <cell>
+                    <number>4.</number>
+                    <name>Зал аэробики абонемент 8 посещений</name>
+                    <length>1 час</length>
+                    <time>18.00-21.00</time>
+                    <price>64 р.</price>
+                </cell>
+                <cell>
+                    <number>5.</number>
+                    <name>Зал аэробики абонемент 12 посещений</name>
+                    <length>1 час</length>
+                    <time>18.00-21.00</time>
+                    <price>84 р.</price>
+                </cell>
+                <cell>
+                    <number>6.</number>
+                    <name>Сауна</name>
+                    <length>1 час</length>
+                    <time>10.00-21.00</time>
+                    <price>30 р.</price>
+                </cell>
+                <cell>
+                    <number>7.</number>
+                    <name>Сауна(для держателей абонементов на посещение в течение месяца)</name>
+                    <length>1 час</length>
+                    <time>10.00-21.00</time>
+                    <price>25 р.</price>
+                </cell>
+                <cell>
+                    <number>8.</number>
+                    <name>Сауна</name>
+                    <length>2 часа</length>
+                    <time>10.00-21.00</time>
+                    <price>50 р.</price>
+                </cell>
+                <cell>
+                    <number>9.</number>
+                    <name>Сауна(для держателей абонементов на посещение в течение месяца)</name>
+                    <length>2 часа</length>
+                    <time>10.00-21.00</time>
+                    <price>40 р.</price>
+                </cell>
+            </prices>
+        </xml>
+    </section>
+    <footer class="footer">
+        <p>Наш адрес: г.Минск, ул. Сторожовская, 8.<br>Звоните по номеру: +375 (17) 310-18-69<br>Наша почта: centrfoc@gmail.com</p>
+        <button><a href="forma.html">Оставить заявку</a></button>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,362 @@
+/*css для хедера*/
+header { 
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: #d6d6d6;
+    border: 3px solid black;
+}
+header .logo {
+    border: 2px solid black;
+}
+header img {
+    width: 65px;
+    height: 55px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 10px;
+}
+#burger_checkbox {
+    z-index: 1;
+    opacity: 0;
+    position:absolute;
+    right: 15px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#burger_simbol {
+    z-index: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    display: none;
+}
+ul {
+    margin-left: 200px;
+    margin-top: 10px;
+}
+ul li {
+    text-align: center;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #A9A9A9;
+    margin-bottom: -2px;
+}
+ul a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    text-align: center;  
+}
+ul a {
+    position: relative;
+}
+ul a:hover {
+    color: DarkRed;
+}
+ul a:hover:before {
+    transform: scaleX(1);
+    transition: transform 0.5s;
+}
+ul a:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transform: scaleX(0);
+}
+.title {
+    text-align: center;
+    width: 350px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*css для секции с текстом*/
+.section1 img {  
+    width: 100%;
+}
+.section2 {
+    border: 2px solid black;
+    background: url(../images/fon_1.png);
+    background-size: 100%;
+    margin-top: -24px;
+    margin-bottom: -25px;
+}
+.section2 h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.section2 h1 span:hover {
+    cursor:default ;
+    color: red;
+}
+.section2 p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+}
+.section3 {
+    border: 2px solid black;
+    background: url(../images/fon.png);
+}
+.section3 .block1 h1 {
+    margin-left: 60px;
+    font-size: 30px;
+}
+.section3 section{
+    border: 2px solid black;
+    display: inline-block;
+    width: 500px;
+    margin-left: 120px;
+}
+.section3 .block1 p {
+    margin-top: 5px;
+    width: 450px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section3 .block1 {
+    border: none;
+    background: lightgray;
+    border-radius: 20px;
+}
+.section3 .block1, .block2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.section3 .block2 {
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+}
+.section3 .block2 button {
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background: #F24040;
+    margin-left: 60px;
+    margin-top: 10px;
+    transition: 1.4s linear;
+}
+.section3 .block2 button:hover {
+    background-color: darkblue;
+}
+.section3 .block1 h1 {
+    animation-name: Title;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes Title {
+    0% {
+        color: red;
+    }
+    50% {
+        color: goldenrod;
+    }
+    100% {
+        color: blue;
+    }
+}
+.section3 .block2 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*css для футера*/
+.footer {
+    border: 2px solid black;
+    background: gray;
+}
+footer p {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+footer button {
+    border: none;
+    float: right;
+    font-size: 16px;
+    border-radius: 18px;
+    width: 145px;
+    height: 40px;
+    font-weight: bolder;
+    margin-top: -70px;
+    margin-right: 50px;
+}
+footer button a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 1464px) {
+    ul {
+        position: absolute;
+        margin-top: 44px;
+        margin-left: 6px;
+    } 
+    li {
+        width: 150px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+    nav {
+        display: none;
+    }
+    #burger_checkbox, #burger_simbol {
+        display: inline-block;
+        margin-top: -10px;
+    } 
+    #burger_checkbox:checked ~ nav {
+        margin-left: 20px;
+        display:inline-block;
+        top: 20px;
+        right: 25px;
+        position: fixed;
+        height: 100%;
+        width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 14px;
+        width: 220px;
+    }
+    header img {
+        width: 55px;
+        height: 45px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .footer button {
+        font-size: 9px;
+        height: 30px;
+        width: 90px;
+        margin-top: -55px;
+        margin-right: 20px;
+    }
+    .section1 {
+        margin-top: 50px;
+    }
+    .section2 {
+        height: 160px;
+        margin-top: -4px;
+        margin-bottom: 0;
+        border: 2px solid black;
+        background: url(../images/fon_1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .section2 h1 {
+        font-size: 16px;
+    }
+    .section2 p {
+        font-size: 14px;
+        margin-top: -8px;
+    }
+    .section3 .block2 h3{
+        font-size: 18px;
+    }
+    .section3 .block2 p{
+        font-size: 15px;
+    }
+    .section3 .block1 p{
+        width: 420px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    .section3 .block1 {
+        border: 2px solid black;
+        width: 450px;
+    }
+    .section3 .block2 {
+        width: 320px;
+        margin-left: 20px;
+        margin-top: -15px;
+    }
+    .block1, .block2 {
+        display: block;
+        
+    }
+    .section3 .block2 button {
+        border: none;
+        border-radius: 25px;
+        width: 110px;
+        height: 30px;
+        background: #F24040;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    .section3 .block2 button a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 620px) {
+    .section3 .block1 {
+        width: 320px;
+        margin-left: 40px;
+    }
+    .section3 .block1 p{
+        width: 280px;
+        margin-left: 5px;
+    }
+    .section3 .block2 {
+        width: 320px;
+        margin-left: 20px;
+        margin-top: -15px;
+    }
+}
+@media (max-width: 468px) {
+    .title {
+        font-size: 12px;
+        width: 220px;
+        margin-left: -10px;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+    .footer button {
+        font-size: 8px;
+        height: 30px;
+        width: 80px;
+        margin-top: -45px;
+        margin-right: 15px;
+    }
+    .section3 .block1 {
+        width: 270px;
+        margin-left: 8px;
+    }
+    .section3 .block1 p{
+        width: 250px;
+        margin-left: 5px;
+    }
+    .section3 .block2 {
+        width: 320px;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+}

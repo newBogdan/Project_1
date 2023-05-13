@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/forma.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="../images/logo.png">
+            <section class="title">Государственное учреждение “Физкультурно-оздоровительный центр”</section>
+            <input type="checkbox" id="burger_checkbox">
+            <label id="burger_simbol">&#8801;</label>
+            <nav class="nav_burger">
+                    <ul class="menu">
+                        <li><a href="main.html">Главная</a></li>
+                        <li><a href="prices.html">Цены на услуги</a></li>
+                        <li><a href="installations.html">Спортивные сооружения</a></li>
+                        <li><a href="time_work.html">Режим работы</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <section class="section">
+                <form id="myform">
+                    <legend>Форма для заполнения</legend>
+                    <label>Фамилия:</label><br>
+                    <input type="text" id="name" required><br>
+                    <label>Имя:</label><br>
+                    <input type="text" id="surname" required><br>
+                    <label>Отчество:</label><br>
+                    <input type="text" id="patronymic" required><br>
+                    <label>Телефон:</label><br>
+                    <input type="tel" id="phone" required><br>
+                    <label>Комментарий:</label><br>
+                    <textarea id="comment" required></textarea><br>
+                    <button type="button" onclick="clearForm()">Очистить</button>
+                    <button class="input1" type="submit">Отправить</button>
+                </form>
+        </section>
+
+        <footer class="footer">
+            <p>Наш адрес: г.Минск, ул. Сторожовская, 8.<br>Звоните по номеру: +375 (17) 310-18-69<br>Наша почта: centrfoc@gmail.com</p>
+            <button><a href="forma.html">Оставить заявку</a></button>
+        </footer>
+    </div>
+    <script>
+        function clearForm() {
+            document.getElementById('myform').reset();
+        } 
+    </script>
+</body>
+</html>

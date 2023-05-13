@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../Css/forXML.css"?>
+<prices>
+    <head>
+        <hnumber>№</hnumber>
+        <htitle>Наименование</htitle>
+        <hyear>Продолжительность посещения</hyear>
+        <htime>Время посещения</htime>
+        <hprice>Цена, бел.руб</hprice>
+    </head>
+    <cell>
+        <number>1.</number>
+        <title>Тренажёрный зал 1 посещение</title>
+        <year>1 час</year>
+        <time>18.00-21.00</time>
+        <price>6 р.</price>    
+    </cell>
+    <cell>
+        <number>2.</number>
+        <title>Тренажёрный зал абонемент 1 месяц </title>
+        <year>1 час</year>
+        <time>18.00-21.00</time>
+        <price>55 р.</price>
+    </cell>
+    <cell>
+        <number>3.</number>
+        <title>Зал аэробики 1 посещение</title>
+        <year>1 час</year>
+        <time>18.00-21.00</time>
+        <price>9 р.</price>
+    </cell>
+    <cell>
+        <number>4.</number>
+        <title>Зал аэробики абонемент 8 посещений</title>
+        <year>1 час</year>
+        <time>18.00-21.00</time>
+        <price>64 р.</price>
+    </cell>
+    <cell>
+        <number>5.</number>
+        <title>Зал аэробики абонемент 12 посещений</title>
+        <year>1 час</year>
+        <time>18.00-21.00</time>
+        <price>84 р.</price>
+    </cell>
+    <cell>
+        <number>6.</number>
+        <title>Сауна</title>
+        <year>1 час</year>
+        <time>10.00-21.00</time>
+        <price>30 р.</price>
+    </cell>
+    <cell>
+        <number>7.</number>
+        <title>Сауна(для держателей абонементов на посещение в течение месяца)</title>
+        <year>1 час</year>
+        <time>10.00-21.00</time>
+        <price>25 р.</price>
+    </cell>
+    <cell>
+        <number>8.</number>
+        <title>Сауна</title>
+        <year>2 часа</year>
+        <time>10.00-21.00</time>
+        <price>50 р.</price>
+    </cell>
+    <cell>
+        <number>9.</number>
+        <title>Сауна(для держателей абонементов на посещение в течение месяца)</title>
+        <year>2 часа</year>
+        <time>10.00-21.00</time>
+        <price>40 р.</price>
+    </cell>
+</prices>
